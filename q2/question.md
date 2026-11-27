@@ -1,1 +1,0 @@
-Write Python or R code to calculate P(X = 0) and P(X ≥ 1). Using a fixed seed, draw 1,000 independent samples of 30 daily counts, store their means, plot their distribution and calculate their empirical standard error. 
