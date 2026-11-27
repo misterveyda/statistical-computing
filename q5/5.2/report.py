@@ -1,14 +1,13 @@
-from scipy.stats import ttest_rel
+from scipy.stats import wilcoxon
 
 # Waiting times before and after
 before = [25, 30, 28, 35, 32, 26]
 after = [20, 24, 23, 27, 26, 21]
 
-# Perform paired t-test
-t_stat, p_value = ttest_rel(before, after)
+# Perform Wilcoxon signed-rank test
+stat, p_value = wilcoxon(before, after)
 
-# Display results
-print("T-statistic:", t_stat)
+print("Wilcoxon Statistic:", stat)
 print("P-value:", p_value)
 
 # Decision at 5% significance level
